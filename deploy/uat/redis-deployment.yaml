@@ -23,13 +23,6 @@ spec:
         - redis-server /usr/local/etc/redis/redis.conf --requirepass dev-redis
         command:
         - /bin/sh
-        resources:
-          requests:
-            cpu: "200m"
-            memory: "600Mi"
-          limits:
-            cpu: "200m"
-            memory: "600Mi"
         volumeMounts:
         - mountPath: /usr/local/etc/redis/redis.conf
           name: app-config
