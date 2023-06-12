@@ -18,7 +18,7 @@ spec:
         vote-config-version: "b46cd5"
     spec:
       containers:
-      - image: yjring/vote-api:1.0.0
+      - image: dannyyangtest/vote-api:dev-b46cd5
         name: vote-api
         imagePullPolicy: Always
         volumeMounts:
